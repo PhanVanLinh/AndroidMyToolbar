@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <vn.linh.androidmytoolbar.MyToolbar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:atb_left_action_icon="@drawable/ic_back"
+        app:atb_right_action_icon="@drawable/ic_check"
+        app:atb_title="Login" />
+
+    <vn.linh.androidmytoolbar.MyToolbar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:atb_left_action_icon="@drawable/ic_back"
+        app:atb_left_icon_tint="#f00"
+        app:atb_right_action_icon="@drawable/ic_check"
+        app:atb_title="Register" />
+
+</LinearLayout>

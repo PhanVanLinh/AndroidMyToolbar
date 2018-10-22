@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48">
+
+        <ImageView
+            android:id="@+id/img_left_action"
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="0dp"
+            android:background="@drawable/bg_icon_light_selector"
+            android:contentDescription="@null"
+            android:padding="@dimen/dp_12"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/img_right_action"
+            app:layout_constraintStart_toEndOf="@+id/img_left_action"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Sign in" />
+
+        <ImageView
+            android:id="@+id/img_right_action"
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="0dp"
+            android:background="@drawable/bg_icon_light_selector"
+            android:contentDescription="@null"
+            android:padding="@dimen/dp_12"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:src="@drawable/ic_check"
+            tools:visibility="visible" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_6"
+        android:background="@drawable/bg_toolbar_divider"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</LinearLayout>
+
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MyToolbar">
+        <attr format="string" name="atb_title"/>
+        <attr format="reference" name="atb_left_action_icon"/>
+        <attr format="boolean" name="atb_hide_left_action"/>
+        <attr format="reference" name="atb_right_action_icon"/>
+        <attr format="boolean" name="atb_hide_right_action"/>
+        <attr format="color" name="atb_left_icon_tint"/>
+        <attr format="color" name="atb_right_icon_tint"/>
+    </declare-styleable>
+
+</resources>
